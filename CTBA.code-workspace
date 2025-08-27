@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// customizing colors
+		"workbench.colorCustomizations": {
+			"terminal.ansiMagenta": "#c253ac",
+			"terminal.foreground": "#D0D0D0",
+			"terminalCursor.foreground":"#c253ac",
+		},
+		// making CTBA automatically open in this workspace
+		"python.terminal.activateEnvironment": true,
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"terminal.integrated.profiles.windows": {
+			"Anaconda": {
+				"source": "PowerShell",
+				"args": [
+					"powershell",
+					"-NoExit",
+					"-ExecutionPolicy ByPass",
+					"-NoProfile",
+					"-File C:/Users/Work/anaconda3/shell/condabin/conda-hook.ps1"
+				],
+			// customizing CTBA terminal environment (powershell icon and color of said icon)
+			"icon": "star-full",
+			"color": "terminal.ansiMagenta"
+			}
+		},
+	}
+}
