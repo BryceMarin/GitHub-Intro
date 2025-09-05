@@ -1,0 +1,25 @@
+body {
+    background-color: #DFEBE0 !important;
+    font-family: Arial, sans-serif;
+}
+h2 {
+    color: navy;
+}
+p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+a {
+    display: inline-block;
+    margin: 18px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: #65Ab6E;
+}
