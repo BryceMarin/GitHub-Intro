@@ -1,4 +1,4 @@
-from dash import Dash, dcc, html
+from dash import Dash, dcc, html, page_container
 import dash_bootstrap_components as dbc
 
 # initialize app
@@ -13,10 +13,12 @@ app.layout = html.Div([
         children = [
             dbc.NavLink("Home", href="/", active="exact"),
             dbc.NavLink("Page 1", href="/page1", active="exact"),
-            dbc.NavLink("Page 2", href="/page2", active="exact")
+            dbc.NavLink("Page 2", href="/page2", active="exact"),
+            dbc.NavLink("Page 3", href="/page3", active="exact")
         ],
         brand = "Multi-Page App"
-    )
+    ),
+    page_container
 ])
 
 if __name__ == "__main__":
